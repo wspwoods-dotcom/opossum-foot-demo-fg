@@ -64,10 +64,31 @@ body {
 
 /* ---------- splash ---------- */
 #view-splash { align-items: center; justify-content: center; text-align: center; padding: 32px; background: radial-gradient(ellipse at 50% 35%, #2B341B 0%, var(--bg) 70%); }
-#view-splash img { width: min(82vw, 350px); height: auto; filter: drop-shadow(0 10px 28px rgba(0,0,0,.45)); }
+#view-splash > img { width: min(82vw, 350px); height: auto; filter: drop-shadow(0 10px 28px rgba(0,0,0,.45)); }
 #view-splash h1 { font-size: 40px; margin: 20px 0 6px; letter-spacing: .5px; }
 #view-splash p { color: var(--muted); margin: 4px 0; }
 #view-splash .loading { margin-top: 26px; color: var(--faint); font-size: 15px; }
+
+/* ---------- splash sponsors (Presented by) ---------- */
+.splash-sponsors { margin-top: 30px; }
+.splash-presented { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+.splash-logos { display: flex; align-items: center; justify-content: center; gap: 28px; }
+.splash-logo-ph { height: 84px; width: auto; }
+.splash-logo-ktp { height: 58px; width: auto; }
+
+/* ---------- sponsor map banner ---------- */
+#sponsor-map-banner {
+  flex: 0 0 auto;
+  display: flex; align-items: center; justify-content: center; gap: 26px;
+  background: #10140c;
+  border-top: 1px solid var(--accent);
+  height: 54px;
+  padding: 0 12px;
+  z-index: 400;
+}
+#sponsor-map-banner .smb-logo { background: none; border: 0; padding: 0; margin: 0; cursor: pointer; display: flex; align-items: center; }
+#sponsor-map-banner .smb-logo img { display: block; height: 42px; width: auto; }
+#sponsor-map-banner .smb-logo[data-sp="kansas-trapline"] img { height: 30px; }
 
 /* ---------- onboarding ---------- */
 #view-onboard { align-items: center; justify-content: center; padding: 28px 22px; }
@@ -254,7 +275,7 @@ select.select-hint { color: var(--faint); }
 #map { flex: 1; min-height: 0; z-index: 1; }
 .leaflet-container { font-family: inherit; background: #0c0f08; }
 
-.map-fabs { position: absolute; right: 12px; bottom: 14px; z-index: 500; display: flex; flex-direction: column; gap: 10px; }
+.map-fabs { position: absolute; right: 12px; bottom: 68px; z-index: 500; display: flex; flex-direction: column; gap: 10px; }
 .fab {
   width: 58px; height: 58px; border-radius: 50%;
   background: var(--accent); color: var(--accent-ink);
