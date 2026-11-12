@@ -9452,7 +9452,7 @@ function boot() {
   wireUp();
   IDB.open().then(function () {
     if (DEMO_ACTIVE) seedDemoIDB();
-    $('splash-status').textContent = 'Ready.';
+    $('splash-status').textContent = 'Follow along.';
     /* B17: hold the splash a few seconds so the logo gets its moment. */
     setTimeout(function () {
       if (Store.data.onboarded && activeStateCode() && stateData()) enterMain();
