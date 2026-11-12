@@ -3191,6 +3191,12 @@ function openSponsorBio(id) {
   $('m-sp-x').onclick = function () { $('modal').classList.remove('sponsor-sheet'); closeModal(); };
 }
 
+/* Sponsor map banner: tap a logo to open that sponsor's bio. */
+document.addEventListener('click', function (e) {
+  var b = e.target && e.target.closest ? e.target.closest('#sponsor-map-banner [data-sp]') : null;
+  if (b) openSponsorBio(b.getAttribute('data-sp'));
+});
+
 function openSetForm(coords, setId) {
   setFormOpenSeq++;
   editingSetId = setId || null;
