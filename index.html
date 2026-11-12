@@ -21,6 +21,13 @@
 <!-- ============ SPLASH ============ -->
 <div id="view-splash" class="view active">
   <img src="assets/logo-primary.png" alt="Opossum Foot logo">
+  <div class="splash-sponsors">
+    <div class="splash-presented">Presented by</div>
+    <div class="splash-logos">
+      <img class="splash-logo-ph" src="assets/sponsors/pine-hollow.png" alt="Pine Hollow Trapping and Supplies">
+      <img class="splash-logo-ktp" src="assets/sponsors/kansas-trapline.png" alt="Kansas Trapline Products">
+    </div>
+  </div>
   <p class="loading" id="splash-status">Loading…</p>
 </div>
 
@@ -92,6 +99,10 @@
     <!-- Q8: way back to the mileage dialog while a route estimate is drawn -->
     <button type="button" id="route-back-chip" class="btn-primary" hidden>‹ Back to mileage</button>
     <div id="map"></div>
+    <div id="sponsor-map-banner">
+      <button type="button" class="smb-logo" data-sp="pine-hollow" aria-label="Pine Hollow Trapping and Supplies"><img src="assets/sponsors/pine-hollow.png" alt="Pine Hollow Trapping and Supplies"></button>
+      <button type="button" class="smb-logo" data-sp="kansas-trapline" aria-label="Kansas Trapline Products"><img src="assets/sponsors/kansas-trapline.png" alt="Kansas Trapline Products"></button>
+    </div>
     <div class="map-fabs">
       <button class="fab secondary" id="btn-locate" type="button" aria-label="Locate me"><img src="assets/icons/crosshair.png" alt=""></button>
       <button class="fab secondary" id="btn-drop-pin" type="button" aria-label="Drop a pin"><img src="assets/pin-track-ol.png" alt=""></button>
