@@ -83,7 +83,7 @@ body {
   background: #10140c;
   border-top: 1px solid var(--accent);
   height: 54px;
-  padding: 0 12px;
+  padding: 0 12px env(safe-area-inset-bottom);
   z-index: 400;
 }
 #sponsor-map-banner .smb-logo { background: none; border: 0; padding: 0; margin: 0; cursor: pointer; display: flex; align-items: center; }
@@ -177,7 +177,6 @@ select.select-hint { color: var(--faint); }
   display: flex;
   background: #10140c;
   border-top: 1px solid var(--line);
-  padding-bottom: env(safe-area-inset-bottom);
 }
 #tabbar button {
   flex: 1 1 0; min-width: 0; background: none; border: none; border-radius: 0;
@@ -275,7 +274,7 @@ select.select-hint { color: var(--faint); }
 #map { flex: 1; min-height: 0; z-index: 1; }
 .leaflet-container { font-family: inherit; background: #0c0f08; }
 
-.map-fabs { position: absolute; right: 12px; bottom: 68px; z-index: 500; display: flex; flex-direction: column; gap: 10px; }
+.map-fabs { position: absolute; right: 12px; bottom: 14px; z-index: 500; display: flex; flex-direction: column; gap: 10px; }
 .fab {
   width: 58px; height: 58px; border-radius: 50%;
   background: var(--accent); color: var(--accent-ink);
