@@ -971,7 +971,7 @@ body.placing .leaflet-control-layers { pointer-events: none; opacity: .45; }
 .sp-bio-sheet { position: relative; min-height: 100%; padding: 110px 30px 44px; text-align: center; }
 .sp-bio-x { position: absolute; top: 56px; right: 16px; background: none; border: none;
   color: var(--muted); font-size: 36px; line-height: 1; padding: 10px; cursor: pointer; }
-.sp-bio-logo { width: 200px; height: 124px; border-radius: 12px; object-fit: contain; }
+.sp-bio-logo { height: 124px; width: auto; max-width: 220px; border-radius: 0; object-fit: contain; }
 .sp-bio-name { text-transform: uppercase; letter-spacing: .1em; font-size: 30px; margin: 20px 0 8px; }
 .sp-bio-tagline { color: var(--accent); text-transform: uppercase; letter-spacing: .2em;
   font-weight: 700; font-size: 15px; }
